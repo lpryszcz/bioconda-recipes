@@ -1,0 +1,31 @@
+package:
+  name: pyscaf
+  version: '0.12a'
+
+source:
+  git_url: https://github.com/lpryszcz/pyScaf
+  git_rev: 94956e7efcf3c6acd0f39117f4bcc30e28d25aad
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - fastaindex
+
+  run:
+    - python
+    - setuptools
+    - fastaindex
+    - last
+
+test:
+  imports:
+    - pyScaf
+
+about:
+  home: https://github.com/lpryszcz/pyScaf
+  license: GPLv3
+  summary: Genome assembly scaffolding using information from paired-end/mate-pair libraries, long reads, and synteny to closely related species. 
